@@ -3,6 +3,19 @@
   height: 36px;
   border-radius: 50%;
   position: absolute;
+  pointer-events: none;
+  background-color: transparent;
+  border: none;
+}
+
+.split.active {
+  pointer-events: all;
+  background-color: #0b9b117a;
+  border: 2px dashed darkgreen;
+}
+.split-checked {
+  border: none;
+  pointer-events: none;
 }
 .split[data-check="player-one"] {
   background-color: darkblue;

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/table-layout.css" />
     <link rel="stylesheet" href="./css/splits.css" />
+    <link rel="stylesheet" href="./css/numbers.css" />
     <script src="./js/main.js" defer></script>
   </head>
   <body>
@@ -21,58 +22,378 @@
         <div id="score">
           <div id="player-one" data-color="darkblue" class="player turn-active">
             <div class="player-name">
-              <span class="player-color"></span> John
+              <span class="player-color"></span> Player 1
             </div>
-            <div class="player-score">7</div>
+            <div class="player-score">30</div>
           </div>
           <div id="player-two" data-color="darkred" class="player">
             <div class="player-name">
-              <span class="player-color"></span> Jack
+              <span class="player-color"></span> Player 2
             </div>
-            <div class="player-score">5</div>
+            <div class="player-score">30</div>
           </div>
         </div>
       </div>
       <div id="main-layout">
         <div id="table-layout">
           <div class="parent">
-            <div data-number="0" class="number number-green div0">0</div>
-            <div data-number="1" class="number number-red div1">1</div>
-            <div data-number="2" class="number div2">2</div>
-            <div data-number="3" class="number number-red div3">3</div>
-            <div data-number="4" class="number div4">4</div>
-            <div data-number="5" class="number number-red div5">5</div>
-            <div data-number="6" class="number div6">6</div>
-            <div data-number="7" class="number number-red div7">7</div>
-            <div data-number="8" class="number div8">8</div>
-            <div data-number="9" class="number number-red div9">9</div>
-            <div data-number="10" class="number div10">10</div>
-            <div data-number="11" class="number div11">11</div>
-            <div data-number="12" class="number number-red div12">12</div>
-            <div data-number="13" class="number">13</div>
-            <div data-number="14" class="number number-red div14">14</div>
-            <div data-number="15" class="number">15</div>
-            <div data-number="16" class="number number-red div16">16</div>
-            <div data-number="17" class="number div17">17</div>
-            <div data-number="18" class="number number-red div18">18</div>
-            <div data-number="19" class="number number-red div19">19</div>
-            <div data-number="20" class="number div20">20</div>
-            <div data-number="21" class="number number-red div21">21</div>
-            <div data-number="22" class="number div22">22</div>
-            <div data-number="23" class="number number-red div23">23</div>
-            <div data-number="24" class="number div24">24</div>
-            <div data-number="25" class="number number-red div25">25</div>
-            <div data-number="26" class="number div26">26</div>
-            <div data-number="27" class="number number-red div27">27</div>
-            <div data-number="28" class="number div28">28</div>
-            <div data-number="29" class="number div29">29</div>
-            <div data-number="30" class="number number-red div30">30</div>
-            <div data-number="31" class="number div31">31</div>
-            <div data-number="32" class="number number-red div32">32</div>
-            <div data-number="33" class="number div33">33</div>
-            <div data-number="34" class="number number-red div34">34</div>
-            <div data-number="35" class="number div35">35</div>
-            <div data-number="36" class="number number-red div36">36</div>
+            <div
+              data-amount="3"
+              data-number="0"
+              class="number number-green div0"
+            >
+              0
+              <span
+                data-check=""
+                data-straight="0"
+                class="straight"
+                id="straight0"
+              ></span>
+            </div>
+            <div data-amount="3" data-number="1" class="number number-red div1">
+              1
+              <span
+                data-check=""
+                data-straight="1"
+                class="straight"
+                id="straight1"
+              ></span>
+            </div>
+            <div data-amount="4" data-number="2" class="number div2">
+              2
+              <span
+                data-check=""
+                data-straight="2"
+                class="straight"
+                id="straight2"
+              ></span>
+            </div>
+            <div data-amount="3" data-number="3" class="number number-red div3">
+              3
+              <span
+                data-check=""
+                data-straight="3"
+                class="straight"
+                id="straight3"
+              ></span>
+            </div>
+            <div data-amount="3" data-number="4" class="number div4">
+              4
+              <span
+                data-check=""
+                data-straight="4"
+                class="straight"
+                id="straight4"
+              ></span>
+            </div>
+            <div data-amount="4" data-number="5" class="number number-red div5">
+              5<span
+                data-check=""
+                data-straight="5"
+                class="straight"
+                id="straight5"
+              ></span>
+            </div>
+            <div data-amount="3" data-number="6" class="number div6">
+              6<span
+                data-check=""
+                data-straight="6"
+                class="straight"
+                id="straight6"
+              ></span>
+            </div>
+            <div data-amount="3" data-number="7" class="number number-red div7">
+              7<span
+                data-check=""
+                data-straight="7"
+                class="straight"
+                id="straight7"
+              ></span>
+            </div>
+            <div data-amount="4" data-number="8" class="number div8">
+              8<span
+                data-check=""
+                data-straight="8"
+                class="straight"
+                id="straight8"
+              ></span>
+            </div>
+            <div data-amount="3" data-number="9" class="number number-red div9">
+              9<span
+                data-check=""
+                data-straight="9"
+                class="straight"
+                id="straight9"
+              ></span>
+            </div>
+            <div data-amount="3" data-number="10" class="number div10">
+              10<span
+                data-check=""
+                data-straight="10"
+                class="straight"
+                id="straight10"
+              ></span>
+            </div>
+            <div data-amount="4" data-number="11" class="number div11">
+              11<span
+                data-check=""
+                data-straight="11"
+                class="straight"
+                id="straight11"
+              ></span>
+            </div>
+            <div
+              data-amount="3"
+              data-number="12"
+              class="number number-red div12"
+            >
+              12<span
+                data-check=""
+                data-straight="12"
+                class="straight"
+                id="straight12"
+              ></span>
+            </div>
+            <div data-amount="3" data-number="13" class="number">
+              13<span
+                data-check=""
+                data-straight="13"
+                class="straight"
+                id="straight13"
+              ></span>
+            </div>
+            <div
+              data-amount="4"
+              data-number="14"
+              class="number number-red div14"
+            >
+              14<span
+                data-check=""
+                data-straight="14"
+                class="straight"
+                id="straight14"
+              ></span>
+            </div>
+            <div data-amount="3" data-number="15" class="number">
+              15<span
+                data-check=""
+                data-straight="15"
+                class="straight"
+                id="straight15"
+              ></span>
+            </div>
+            <div
+              data-amount="3"
+              data-number="16"
+              class="number number-red div16"
+            >
+              16<span
+                data-check=""
+                data-straight="16"
+                class="straight"
+                id="straight16"
+              ></span>
+            </div>
+            <div data-amount="4" data-number="17" class="number div17">
+              17<span
+                data-check=""
+                data-straight="17"
+                class="straight"
+                id="straight17"
+              ></span>
+            </div>
+            <div
+              data-amount="3"
+              data-number="18"
+              class="number number-red div18"
+            >
+              18<span
+                data-check=""
+                data-straight="18"
+                class="straight"
+                id="straight18"
+              ></span>
+            </div>
+            <div
+              data-amount="3"
+              data-number="19"
+              class="number number-red div19"
+            >
+              19<span
+                data-check=""
+                data-straight="19"
+                class="straight"
+                id="straight19"
+              ></span>
+            </div>
+            <div data-amount="4" data-number="20" class="number div20">
+              20<span
+                data-check=""
+                data-straight="20"
+                class="straight"
+                id="straight20"
+              ></span>
+            </div>
+            <div
+              data-amount="3"
+              data-number="21"
+              class="number number-red div21"
+            >
+              21<span
+                data-check=""
+                data-straight="21"
+                class="straight"
+                id="straight21"
+              ></span>
+            </div>
+            <div data-amount="3" data-number="22" class="number div22">
+              22<span
+                data-check=""
+                data-straight="22"
+                class="straight"
+                id="straight22"
+              ></span>
+            </div>
+            <div
+              data-amount="4"
+              data-number="23"
+              class="number number-red div23"
+            >
+              23<span
+                data-check=""
+                data-straight="23"
+                class="straight"
+                id="straight23"
+              ></span>
+            </div>
+            <div data-amount="3" data-number="24" class="number div24">
+              24<span
+                data-check=""
+                data-straight="24"
+                class="straight"
+                id="straight24"
+              ></span>
+            </div>
+            <div
+              data-amount="3"
+              data-number="25"
+              class="number number-red div25"
+            >
+              25<span
+                data-check=""
+                data-straight="25"
+                class="straight"
+                id="straight25"
+              ></span>
+            </div>
+            <div data-amount="4" data-number="26" class="number div26">
+              26<span
+                data-check=""
+                data-straight="26"
+                class="straight"
+                id="straight26"
+              ></span>
+            </div>
+            <div
+              data-amount="3"
+              data-number="27"
+              class="number number-red div27"
+            >
+              27<span
+                data-check=""
+                data-straight="27"
+                class="straight"
+                id="straight27"
+              ></span>
+            </div>
+            <div data-amount="3" data-number="28" class="number div28">
+              28<span
+                data-check=""
+                data-straight="28"
+                class="straight"
+                id="straight28"
+              ></span>
+            </div>
+            <div data-amount="4" data-number="29" class="number div29">
+              29<span
+                data-check=""
+                data-straight="29"
+                class="straight"
+                id="straight29"
+              ></span>
+            </div>
+            <div
+              data-amount="3"
+              data-number="30"
+              class="number number-red div30"
+            >
+              30<span
+                data-check=""
+                data-straight="30"
+                class="straight"
+                id="straight30"
+              ></span>
+            </div>
+            <div data-amount="3" data-number="31" class="number div31">
+              31<span
+                data-check=""
+                data-straight="31"
+                class="straight"
+                id="straight31"
+              ></span>
+            </div>
+            <div
+              data-amount="4"
+              data-number="32"
+              class="number number-red div32"
+            >
+              32<span
+                data-check=""
+                data-straight="32"
+                class="straight"
+                id="straight32"
+              ></span>
+            </div>
+            <div data-amount="3" data-number="33" class="number div33">
+              33<span
+                data-check=""
+                data-straight="33"
+                class="straight"
+                id="straight33"
+              ></span>
+            </div>
+            <div
+              data-amount="2"
+              data-number="34"
+              class="number number-red div34"
+            >
+              34<span
+                data-check=""
+                data-straight="34"
+                class="straight"
+                id="straight34"
+              ></span>
+            </div>
+            <div data-amount="3" data-number="35" class="number div35">
+              35<span
+                data-check=""
+                data-straight="35"
+                class="straight"
+                id="straight35"
+              ></span>
+            </div>
+            <div
+              data-amount="2"
+              data-number="36"
+              class="number number-red div36"
+            >
+              36<span
+                data-check=""
+                data-straight="36"
+                class="straight"
+                id="straight36"
+              ></span>
+            </div>
 
             <span
               data-check=""
@@ -99,7 +420,7 @@
               id="split4"
             ></span>
             <span
-              data-check="player-one"
+              data-check=""
               data-split="10-13"
               class="split"
               id="split5"
@@ -117,7 +438,7 @@
               id="split7"
             ></span>
             <span
-              data-check="player-two"
+              data-check=""
               data-split="19-22"
               class="split"
               id="split8"
@@ -155,7 +476,7 @@
             <span
               data-check=""
               data-split="2-5"
-              class="split"
+              class="split checked"
               id="split14"
             ></span>
             <span
@@ -299,7 +620,7 @@
             <span
               data-check=""
               data-split="4-5"
-              class="split"
+              class="split checked"
               id="split38"
             ></span>
             <span
@@ -371,7 +692,7 @@
             <span
               data-check=""
               data-split="5-6"
-              class="split"
+              class="split checked"
               id="split50"
             ></span>
             <span
@@ -433,6 +754,13 @@
               data-split="35-36"
               class="split"
               id="split60"
+            ></span>
+
+            <span
+              data-check=""
+              data-straight="1"
+              class="straight"
+              id="straight1"
             ></span>
           </div>
         </div>

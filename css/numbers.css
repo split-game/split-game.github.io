@@ -1,0 +1,12 @@
+.straight {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  position: absolute;
+  pointer-events: none;
+  background-color: transparent;
+  border: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

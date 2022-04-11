@@ -79,7 +79,20 @@
   transform: translateX(-50%);
   outline: none;
   border: none;
+  transition: all 0.5s;
 }
+#start-button:disabled {
+  width: 70px;
+  font-size: 0;
+}
+#start-button:disabled #button-logo {
+  margin: 0;
+}
+#start-button:disabled span,
+#start-button:disabled img {
+  display: none;
+}
+
 #start-button:active {
   background: green;
 }
@@ -91,6 +104,7 @@
 }
 .number {
   background: transparent;
+  position: relative;
 }
 .number.number-active {
   background: #c3aeae;
